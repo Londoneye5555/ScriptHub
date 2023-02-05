@@ -21,7 +21,7 @@ FunTab:AddButton({
 
 OrionLib:MakeNotification({
 	Name = "Credits",
-	Content = "Made by Kostiya#3712",
+	Content = "Made by Kostiya#3712, Thanks to Username Yet#5213 for testing",
 	Image = "rbxassetid://4483345998",
 	Time = 7
 })
