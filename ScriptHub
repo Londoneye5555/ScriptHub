@@ -1,0 +1,34 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "K0ss's Secret Script V1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local FunTab = Window:MakeTab({
+	Name = "Fun stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+FunTab:AddButton({
+	Name = "inf jump!",
+	Callback = function()
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+  	end    
+})
+
+OrionLib:MakeNotification({
+	Name = "Credits",
+	Content = "Made by Kostiya#3712",
+	Image = "rbxassetid://4483345998",
+	Time = 7
+})
+
+FunTab:AddButton({
+	Name = "inf yeild",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
