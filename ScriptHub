@@ -43,7 +43,7 @@ FunTab:AddButton({
 })
 
 FunTab:AddButton({
-	Name = "Chat bypasser lol",
+	Name = "FE Neko (does work a bit)",
 	Callback = function()
 		loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()local NotificationBindable = Instance.new("BindableFunction")
 local Msgreq = function(Title,Text,Duration,Button1Text,Button2Text)
